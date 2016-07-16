@@ -2,7 +2,15 @@
 
 {% block extrahead %}
 {{ super() }}
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% endblock %}
+
+{% set script_files = script_files + ["_static/mezzanine.js"] %}
+{% block document %}
+{{ super() }}
+<div id="toggle">
+	<span>&lt;</span>
+</div>
 {% endblock %}
 
 {% block footer %}
