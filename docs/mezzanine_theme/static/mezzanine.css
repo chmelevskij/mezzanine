@@ -475,16 +475,17 @@ a em {font-style:normal;}
     .sphinxsidebar {display:none;}
 }
 
-/* Toggling */
+/* -- Toggling ---------------------------------------------------------- */
 #toggle{
     order: 2;
-    background-color: #e5e2de;
+    background-color: #d4d1cd;
+		opacity: 0.7;
 		cursor: pointer;
 		width: 40px;
 }
 
 #toggle:hover {
-	background-color: #d4d1cd;
+	opacity: 1;
 }
 
 .fullscreen {
@@ -497,7 +498,6 @@ a em {font-style:normal;}
 
 .bodywrapper,
 .sphinxsidebar,
-#toggle
-{
-	transition: transform 250ms ease-out;
+#toggle {
+	transition: transform 250ms ease-out, opacity 200ms ease-out;
 }
