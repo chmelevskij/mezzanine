@@ -4,6 +4,7 @@
 *.pot
 *.doctree
 *.swp
+*.swo
 .doctrees
 .DS_Store
 .coverage
